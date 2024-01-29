@@ -1,19 +1,19 @@
 {
-  "name": "pnpm-monorepo",
+  "name": "habit-dev",
   "version": "1.0.0",
   "description": "",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "common": "pnpm --filter common",
-    "app": "pnpm --filter web-app"
+    "web": "pnpm --filter @habit-dev/web",
+    "ui": "pnpm --filter @habit-dev/ui",
+    "start-web": "pnpm ui build && pnpm web dev"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mirul Khanal",
   "license": "ISC",
   "engines": {
     "node": ">=18.16.1"
@@ -23,17 +23,24 @@
     "@commitlint/config-conventional": "^17.7.0",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.4.0",
+    "autoprefixer": "^10.4.17",
     "eslint": "^8.47.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.0",
-    "prettier": "^3.0.1"
+    "postcss": "^8.4.33",
+    "prettier": "^3.0.1",
+    "tailwindcss": "^3.4.1"
   },
   "lint-staged": {
     "**/*.{js,ts,tsx}": [
       "eslint --fix"
     ],
     "**/*": "prettier --write --ignore-unknown"
+  },
+  "dependencies": {
+    "config": "^1.0.0",
+    "ui": "^0.0.0"
   }
 }

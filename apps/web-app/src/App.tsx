@@ -1,13 +1,14 @@
-import { isBlank } from 'common';
+import { Route, Routes } from 'react-router-dom';
+import Homepage from './pages/Homepage';
+import Layout from './theme/Layout';
 
 const App = () => {
   return (
-    <>
-      <p>undefined isBlank - {isBlank(undefined) ? 'true' : 'false'}</p>
-      <p>false isBlank - {isBlank(false) ? 'true' : 'false'}</p>
-      <p>true isBlank - {isBlank(true) ? 'true' : 'false'}</p>
-      <p>Empty object isBlank - {isBlank({}) ? 'true' : 'false'}</p>
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Homepage />} />
+      </Route>
+    </Routes>
   );
 };
 

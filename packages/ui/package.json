@@ -1,0 +1,23 @@
+{
+  "name": "@habit-dev/ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.tsx",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^18.2.15",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.8",
+    "typescript": "^5.0.2"
+  },
+  "devDependencies": {
+    "chokidar": "^3.5.3"
+  }
+}
