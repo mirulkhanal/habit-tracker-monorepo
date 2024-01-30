@@ -1,5 +1,11 @@
 * {
   box-sizing: border-box;
+  font-family: 'Quicksand';
+}
+:root {
+  --gray: #71767e;
+  --creamwhite: #ecdfd4;
+  --primarygreen: #7ca982;
 }
 body {
   margin: 0;

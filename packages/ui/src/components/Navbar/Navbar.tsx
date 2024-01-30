@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import Button from '../Button';
+import { AiOutlineLogin } from 'react-icons/ai';
+import NavbarMenu from './NavbarMenu';
 
 const StyledNavbar = styled.div`
   min-height: 3rem;
@@ -10,6 +13,10 @@ const StyledNavbar = styled.div`
   justify-content: space-between;
   align-items: center;
   color: ${(props) => props.theme.data.color};
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 `;
 
 const LogoContainer = styled.div`
@@ -19,6 +26,7 @@ const LogoContainer = styled.div`
   gap: 1rem;
   justify-content: flex-start;
   width: 12%;
+
   & > img {
     width: 2.5rem;
     background-color: #7ca982;
@@ -32,6 +40,10 @@ const LogoContainer = styled.div`
     font-weight: 700;
   }
 `;
+
+const ButtonContainer = styled.div`
+  display: flex;
+`;
 const Navbar = () => {
   return (
     <StyledNavbar>
@@ -39,6 +51,15 @@ const Navbar = () => {
         <img src="/images/logo.png" />
         <span>POGO</span>
       </LogoContainer>
+      <NavbarMenu />
+      <ButtonContainer>
+        <Button buttonType="outline">
+          <AiOutlineLogin /> Login
+        </Button>
+        <Button buttonType="primary">
+          Go To Dashboard <span>&rarr;</span>
+        </Button>
+      </ButtonContainer>
     </StyledNavbar>
   );
 };

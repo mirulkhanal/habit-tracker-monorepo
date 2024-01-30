@@ -1,9 +1,9 @@
-import { Button, PageContainer } from '@habit-dev/ui';
+import { Hero, PageContainer } from '@habit-dev/ui';
 
 const Homepage = () => {
   return (
     <PageContainer>
-      <Button buttonType="primary">Click Me</Button>
+      <Hero />
     </PageContainer>
   );
 };
