@@ -13,7 +13,7 @@ const MenuContainer = styled.div`
 `;
 
 const MenuItem = styled(Link)`
-  color: var(--gray);
+  color: var(--primarygray);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -25,7 +25,7 @@ const MenuItem = styled(Link)`
   }
 
   &:hover svg {
-    transform: rotate(270deg);
+    transform: rotate(-90deg);
   }
 `;
 const NavbarMenu = () => {

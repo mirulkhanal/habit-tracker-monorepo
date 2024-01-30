@@ -18,15 +18,15 @@ const ButtonTypeStyles = {
     transition: background 0.4s ease-in-out; // Add transition property
     &:hover {
       background: var(--creamwhite);
-      color: var(--gray);
+      color: var(--primarygray);
     }
   `,
   secondary: css`
-    background: #2a3d45;
+    background: var(--secondarygray);
     padding: 0.5rem 1.5rem;
     outline: none;
     border: none;
-    border-radius: 8px;
+    border-radius: 1px;
     font-size: 1.1rem;
     color: white;
     box-shadow:
@@ -36,7 +36,7 @@ const ButtonTypeStyles = {
     transition: background 0.4s ease-in-out; // Add transition property
     &:hover {
       background: var(--creamwhite);
-      color: var(--gray);
+      color: var(--primarygray);
     }
   `,
   outline: css`
@@ -44,10 +44,10 @@ const ButtonTypeStyles = {
     padding: 0.5rem 1.5rem;
     background: transparent;
     outline: none;
-    border: 1px solid var(--gray);
+    border: 1px solid var(--primarygray);
     border-radius: 1px;
     font-size: 1.1rem;
-    color: var(--gray);
+    color: var(--primarygray);
     display: flex;
     align-items: center;
     justify-content: space-between;

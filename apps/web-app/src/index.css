@@ -3,9 +3,11 @@
   font-family: 'Quicksand';
 }
 :root {
-  --gray: #71767e;
+  --primarygray: #71767e;
   --creamwhite: #ecdfd4;
   --primarygreen: #7ca982;
+  --primaryred: #ff3c38;
+  --secondarygray: #2a3d45;
 }
 body {
   margin: 0;

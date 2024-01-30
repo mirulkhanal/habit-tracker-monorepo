@@ -9,6 +9,7 @@ const StyledContainer = styled.div`
   padding-top: 3.6rem;
   background-color: ${(props) => props.theme.data.backgroundColor};
   background-image: ${(props) => props.theme.data.backgroundImage};
+  border: 1px solid green;
 `;
 
 const PageContainer = ({ children }: PageContainerProps) => {

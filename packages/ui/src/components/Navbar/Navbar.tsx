@@ -29,7 +29,7 @@ const LogoContainer = styled.div`
 
   & > img {
     width: 2.5rem;
-    background-color: #7ca982;
+    background-color: var(--primarygreen);
     padding: 0.5rem;
     border-radius: 12px;
   }
@@ -38,6 +38,7 @@ const LogoContainer = styled.div`
     font-family: 'Quicksand';
     font-size: 30px;
     font-weight: 700;
+    color: var(--secondarygray);
   }
 `;
 
@@ -49,7 +50,7 @@ const Navbar = () => {
     <StyledNavbar>
       <LogoContainer>
         <img src="/images/logo.png" />
-        <span>POGO</span>
+        <span>WAVES</span>
       </LogoContainer>
       <NavbarMenu />
       <ButtonContainer>
