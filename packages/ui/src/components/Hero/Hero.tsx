@@ -9,8 +9,6 @@ const HeroContainer = styled.div`
   border-radius: 1px;
   height: 75%;
   position: relative;
-  &:first-child {
-  }
 `;
 const HeroImage = styled.img`
   position: absolute;
@@ -32,13 +30,15 @@ const WavesContainer = styled.div`
 `;
 
 const HeroTitle = styled.h1`
+  /* border: 1px solid black; */
   width: fit-content;
   color: var(--secondarygray);
   margin-left: 70px;
   display: flex;
   flex-direction: column;
+  margin-top: 7.5rem;
   font-size: 3rem;
-  margin-top: 20px;
+
   & .gradient_box {
     padding: 0 10px;
     color: white;
@@ -49,9 +49,9 @@ const HeroTitle = styled.h1`
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+
     & > button {
-      margin: 10px 10px 0 0;
+      margin: 0px 10px 0 0;
       font-size: 2rem;
     }
   }
